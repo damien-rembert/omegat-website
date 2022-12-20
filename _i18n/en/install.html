@@ -1,47 +1,4 @@
 <div class="container">
-  <h3 id="install">Installing and running OmegaT</h3>
-  <div id="toc">
-    <ul>
-      <li><a href="#windows">Windows Users</a>
-        <ul>
-          <li><a href="#installonwindows">Installing OmegaT</a>
-          </li>
-          <li><a href="#runonwindows">Running OmegaT</a>
-          </li>
-          </ul>
-          </li>
-      <li><a href="#linux">Linux (Intel) Users</a>
-        <ul>
-          <li><a href="#installonlinux">Installing OmegaT</a>
-          </li>
-          <li><a href="#addshortcutonlinux">Adding OmegaT to your menus (KDE) or panels (Gnome)</a>
-          </li>
-          <li><a href="#runonlinux">Running OmegaT</a>
-          </li>
-          </ul>
-          </li>
-      <li><a href="#macos">macOS Users</a>
-        <ul>
-          <li><a href="#installonmacos">Installing OmegaT</a>
-          </li>
-          <li><a href="#addshortcutonmacos">Adding OmegaT to the Dock</a>
-          </li>
-          <li><a href="#runonmacos">Running OmegaT</a>
-          </li>
-          </ul>
-          </li>
-      <li><a href="#othersystems">Other Systems</a>
-        <ul>
-          <li><a href="#installonother">Installing OmegaT</a>
-          </li>
-          <li><a href="#runonother">Running OmegaT</a>
-          </li>
-        </ul>
-        </li>
-      <li><a href="#cli">Command line launch</a>
-      </li>
-    </ul>
-  </div>
 <section>
   <div class="titlepage">
       <div>
@@ -83,7 +40,7 @@
       <p>Due to licensing considerations, the OmegaT team recommends the Java
         runtime Eclipse Temurin provided by the Eclipse Foundation's Adoptium Project, but any Java 8
         compatible runtime environment should work.</p>
-      </div>
+    </div>
     <section class="section" id="installing.omegat.windows">
       <div class="titlepage">
         <div>
@@ -281,54 +238,7 @@
           </dl>
           </div>
     </section>
-    <section class="section" id="update.and.delete.omegat.delete">
-      <div class="titlepage">
-        <div>
-          <div>
-            <h3 class="title">Delete OmegaT</h3>
-            </div>
-            </div>
-            </div>
-      <p>Use your operating system’s standard procedure to remove OmegaT.
-        If you want to remove OmegaT completely, you will also have to delete
-        the configuration folder.</p>
-      <p>If you performed a manual <span class="wh-highlighted">installation</span> on Linux, you will have to
-        manually delete the OmegaT folders in <code class="filename">opt/</code>, as well
-        as the symlinks placed in <code class="filename">/usr/local/bin/</code> by the
-        <span class="wh-highlighted">installation</span> script.
-      </p>
-      </section>
-    <section class="section" id="build.omegat.from.source">
-      <div class="titlepage">
-        <div>
-          <div>
-            <h3 class="title">Build OmegaT</h3>
-            </div>
-            </div>
-            </div>
-      <p>The source code for the current version can be either be downloaded directly from the OmegaT <a class="ulink"
-          href="https://omegat.org/download" target="_top">download page.</a>, or cloned from the
-        <a class="ulink" href="https://git.code.sf.net/p/omegat/code" target="_top">Sourceforge</a> or <a class="ulink"
-          href="https://github.com/omegat-org/omegat.git" target="_top">GitHub</a> repositories.
-      </p>
-      <p>Once the code is downloaded, open a terminal in the source folder
-        (<code class="filename">omegat-code/</code> if you cloned from Sourceforge, or
-        <code class="filename">/omegat</code> if you cloned from GitHub) and type:
-      </p>
-      <pre class="programlisting">./gradlew <span class="wh-highlighted">installDist</span></pre>
-      <p>This will create a full distribution of OmegaT in the
-        <code class="filename">build/<span class="wh-highlighted">install</span>/OmegaT</code> folder, ready to be
-        launched.
-      </p>
-      <p>You can also run the application directly with the following
-        command:</p>
-      <pre class="programlisting">./gradlew run</pre>
-      <p>You can get a list of all available tasks by typing:</p>
-      <pre class="programlisting">./gradlew tasks</pre>
-      <p>Detailed instructions on building OmegaT can be found in the <a class="ulink"
-          href="https://sourceforge.net/p/omegat/svn/HEAD/tree/trunk/docs_devel/README.txt" target="_top">README.txt</a>
-        file located in the <code class="filename">docs_devel</code> subfolder.</p>
-      </section>
+</section>
 
 
         <footer>
