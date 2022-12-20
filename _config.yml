@@ -64,7 +64,9 @@ assets:
   gzip: true
   defaults:
     integrity:
-      {css,img,js}: false
+      css: false
+      img: false
+      js: false
 
 plugins_dir:
   - jekyll-sitemap
