@@ -20,8 +20,8 @@ description: > # this means to ignore newlines until "baseurl:"
   It is a tool intended for professional translators.
 
 # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://damien-rembert.github.io/omegat-website"
-baseurl: ""
+url: "https://damien-rembert.github.io"
+baseurl: "/omegat-website"
 
 # Github
 #url: "https://omegat-org.github.io"
