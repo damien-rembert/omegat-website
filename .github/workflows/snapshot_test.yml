@@ -53,8 +53,13 @@ jobs:
       - name: Get snapshot from master branch
         run: npm run update-snapshots
 
+      - name: Remove site directory
+        run: npm run clean
+
       - name: Checkout PR branch 🛎
         uses: actions/checkout@v4
+        with:
+          clean: false
 
       - name: Build with Jekyll from PR branch 🏗
         # Outputs to the './_site' directory by default
