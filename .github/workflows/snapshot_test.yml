@@ -59,7 +59,7 @@ jobs:
           clean: false
 
       - name: Publish Snapshot Test Results
-        if: ${{ cancelled() }}
+        if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
           name: snapshots
@@ -76,7 +76,7 @@ jobs:
         run: npm run test-with-output
 
       - name: Publish Snapshot Test Results
-        if: ${{ cancelled() }}
+        if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
           name: snapshot-test-results
