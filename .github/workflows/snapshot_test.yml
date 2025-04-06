@@ -53,6 +53,12 @@ jobs:
       - name: Get snapshots from master branch
         run: npm run update-snapshots
 
+      - name: Publish Snapshot Test Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: snapshots
+          path: __tests__/__snapshots__/snapshots.test.js.snap
+
       - name: Checkout PR branch 🛎
         uses: actions/checkout@v4
         with:
