@@ -50,7 +50,7 @@ jobs:
       - name: Get Node Dependencies
         run: npm ci
 
-      - name: Get snapshot from master branch
+      - name: Get snapshots from master branch
         run: npm run update-snapshots
 
       - name: Checkout PR branch 🛎
